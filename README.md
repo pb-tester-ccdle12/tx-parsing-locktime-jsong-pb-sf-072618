@@ -38,6 +38,7 @@ class Tx(Tx):
             outputs.append(TxOut.parse(s))
 
         # locktime is 4 bytes, little-endian
+        locktime = []
         # return an instance of the class (cls(...))
-        pass
+        return cls(version, inputs, outputs, locktime)
 ```
